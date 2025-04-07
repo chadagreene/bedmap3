@@ -61,7 +61,7 @@ narginchk(3,4)
 extrapval = NaN; % Default extrapolation value
 
 if nargin==3
-    if ismember(lower(variable),{'ground','grounded','rock','ice'})
+    if ismember(lower(variable),{'mask','ground','grounded','rock','ice'})
         method = 'nearest'; 
         extrapval = 0; 
     else
